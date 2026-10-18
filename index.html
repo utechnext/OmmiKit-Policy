@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OmniKit — Privacy Policy</title>
+<meta name="description" content="How OmniKit handles your data: on-device by default, no ads, no tracking.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f4fb;
+    --card: #ffffff;
+    --text: #1d1b24;
+    --muted: #6b6877;
+    --border: #e4e0ee;
+    --brand: #5e35b1;
+    --brand-soft: #ede7f8;
+    --brand-contrast: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12101a;
+      --card: #1b1826;
+      --text: #ece9f4;
+      --muted: #a29eb3;
+      --border: #2d2940;
+      --brand: #b39ddb;
+      --brand-soft: #2a2240;
+      --brand-contrast: #1d1b24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Lao", sans-serif;
+    line-height: 1.65;
+  }
+  header.hero {
+    background: linear-gradient(135deg, #4527a0, #7e57c2);
+    color: #fff;
+    padding: 40px 20px 56px;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; opacity: .95; }
+  .brand .logo {
+    width: 34px; height: 34px; border-radius: 10px; background: rgba(255,255,255,.18);
+    display: grid; place-items: center; font-size: 18px;
+  }
+  header.hero h1 { font-size: 2rem; line-height: 1.2; margin: 18px 0 6px; }
+  header.hero p { margin: 0; opacity: .9; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip {
+    background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28);
+    padding: 4px 12px; border-radius: 999px; font-size: .82rem;
+  }
+  main { margin-top: -28px; padding: 0 16px 56px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 20px 22px; margin-bottom: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  .card h2 { font-size: 1.1rem; margin: 0 0 8px; color: var(--brand); scroll-margin-top: 16px; }
+  .card p { margin: 0 0 10px; }
+  .card p:last-child { margin-bottom: 0; }
+  .summary { border-left: 4px solid var(--brand); background: var(--brand-soft); }
+  nav.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav.toc a {
+    text-decoration: none; font-size: .85rem; color: var(--brand);
+    background: var(--brand-soft); padding: 5px 12px; border-radius: 999px;
+  }
+  nav.toc a:hover { filter: brightness(.96); }
+  a { color: var(--brand); }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 8px; }
+  .contact-item {
+    display: block; text-decoration: none; color: var(--text);
+    border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px;
+  }
+  .contact-item:hover { border-color: var(--brand); }
+  .contact-item small { display: block; color: var(--muted); font-size: .78rem; }
+  .contact-item strong { color: var(--brand); word-break: break-all; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 8px 16px 40px; }
+  @media (max-width: 480px) {
+    header.hero { padding: 28px 16px 48px; }
+    header.hero h1 { font-size: 1.6rem; }
+    .card { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand"><span class="logo">⚙</span> OmniKit</div>
+      <h1>Privacy Policy</h1>
+      <p>Your data stays on your device by default.</p>
+      <div class="chips">
+        <span class="chip">Effective: 18 October 2026</span>
+        <span class="chip">No ads</span>
+        <span class="chip">No tracking</span>
+        <span class="chip">Data never sold</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="card summary">
+        <h2>Summary</h2>
+        <p>OmniKit is a privacy-first utility toolbox. Your data stays on your device
+        by default. We do not sell your data, show ads, or track you across apps. Data
+        leaves your device only when you explicitly use a feature that requires it
+        (AI tools, cloud backup, or sharing), plus the limited anonymous diagnostics
+        and notifications described below.</p>
+      </section>
+
+      <section class="card">
+        <nav class="toc" aria-label="Sections">
+          <a href="#device">On-device data</a>
+          <a href="#diagnostics">Diagnostics</a>
+          <a href="#ai">AI features</a>
+          <a href="#notifications">Notifications</a>
+          <a href="#drive">Drive backup</a>
+          <a href="#permissions">Permissions</a>
+          <a href="#network">Network</a>
+          <a href="#deletion">Data deletion</a>
+          <a href="#children">Children</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </section>
+
+      <section class="card" id="device">
+        <h2>Data stored on your device</h2>
+        <p>Notes, snippets, passwords, vault items, saved connections, history, and
+        settings are stored locally on your device (and, where relevant, in your
+        device's secure storage). This data is not transmitted to us.</p>
+      </section>
+
+      <section class="card" id="diagnostics">
+        <h2>Anonymous diagnostics &amp; AI limits</h2>
+        <p>To enforce free daily AI usage limits, deliver update notices, and improve
+        stability, the app sends a small amount of non-personal data to our backend:
+        a random device identifier generated on first launch (not linked to your
+        identity or used for ads), basic device info (model, OS and app version), AI
+        token usage counts, and crash/error reports (message and technical stack,
+        without the content you enter). No name, email, account, or location is
+        collected.</p>
+      </section>
+
+      <section class="card" id="ai">
+        <h2>AI features</h2>
+        <p>When you use an AI feature, the content you submit is sent to an AI provider
+        to generate a response. If you use the app's built-in AI, the request passes
+        through our secure backend (which holds the provider keys) and is then
+        forwarded to the AI provider; if you use your own API key, the request goes
+        directly to your chosen provider and is billed to your account. These requests
+        are processed under the relevant provider's privacy policy. Do not submit
+        information you are not comfortable sharing. We do not use your AI content for
+        advertising and do not sell it.</p>
+        <p>Cloud voice transcription (optional) sends only the audio you choose to
+        transcribe through our backend to a speech-to-text provider, which returns the
+        text. It is processed under that provider's privacy policy.</p>
+      </section>
+
+      <section class="card" id="notifications">
+        <h2>Notifications</h2>
+        <p>OmniKit can show notifications, for example when an update is available,
+        a transcript is ready, or the developer sends a notice. Push notices are
+        delivered through Firebase Cloud Messaging (Google). Firebase assigns the app
+        installation a technical identifier so messages can reach your device; we
+        send notices to all installations at once and do not use this identifier to
+        identify you or for advertising.</p>
+        <p>Notices you receive are also saved in an in-app inbox on your device. You
+        can turn notifications off at any time in your device's system settings.</p>
+      </section>
+
+      <section class="card" id="drive">
+        <h2>Google Drive backup (optional)</h2>
+        <p>If you enable Google Drive backup, the app uploads a copy of your app data
+        to your own private Google Drive app folder. Only you can access it. We never
+        receive a copy. You can delete the backup at any time from your Google
+        account.</p>
+      </section>
+
+      <section class="card" id="permissions">
+        <h2>Permissions</h2>
+        <p>OmniKit requests permissions only when a feature needs them, for example:
+        Camera (QR scanning, document/receipt capture), Microphone (voice notes,
+        speech input), Notifications (alerts and notices), NFC (tag read/write),
+        Photos/Files (image tools, file manager, import/export), and Network (AI,
+        backup, network tools). OmniKit does not use location. Permissions are used
+        solely for the feature you invoke and are not used for tracking.</p>
+      </section>
+
+      <section class="card" id="network">
+        <h2>Network / sharing features</h2>
+        <p>Features such as file transfer, network storage and IP camera connect
+        directly between your device and the servers or devices you choose, over your
+        local network or the addresses you enter. We do not proxy or store that
+        traffic.</p>
+      </section>
+
+      <section class="card" id="deletion">
+        <h2>Data deletion</h2>
+        <p>OmniKit has no user accounts. Uninstalling the app removes all locally
+        stored data from your device. To remove the anonymous diagnostics record tied
+        to your device identifier, email us at
+        <a href="mailto:info@utechnext.com">info@utechnext.com</a> with a request to
+        delete your device data.</p>
+      </section>
+
+      <section class="card" id="children">
+        <h2>Children</h2>
+        <p>OmniKit is not directed at children under 13 and we do not knowingly collect
+        personal information from them.</p>
+      </section>
+
+      <section class="card" id="changes">
+        <h2>Changes</h2>
+        <p>We may update this policy as the app evolves. Material changes will be
+        reflected here with a new effective date.</p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Questions about this policy or your data? Reach the developer, UTechNext:</p>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:info@utechnext.com">
+            <small>Email</small><strong>info@utechnext.com</strong>
+          </a>
+          <a class="contact-item" href="https://utechnext.com/en/" target="_blank" rel="noopener">
+            <small>Website</small><strong>utechnext.com</strong>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>© 2026 UTechNext · OmniKit</footer>
+</body>
+</html>
